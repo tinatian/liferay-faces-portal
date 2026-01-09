@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.liferay.faces</groupId>
 		<artifactId>com.liferay.faces.portal.parent</artifactId>
-		<version>6.1.1-SNAPSHOT</version>
+		<version>7.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>com.liferay.faces.portal</artifactId>
@@ -92,8 +92,8 @@
 								com.liferay.portal.kernel.parsers.bbcode;version="7.0",\
 								com.liferay.portal.kernel.xml;version="7.0",\
 								com.liferay.wiki.exception;version="1.1",\
-								jakarta.el;version="[2.2.0,4.0.0)",\
-								jakarta.portlet;version="[3.0.0,4.0.0)",\
+								jakarta.el;version="[2.2.0,6.0.0)",\
+								jakarta.portlet;version="[3.0.0,5.0.0)",\
 								*
 						]]>
 					</bnd>
@@ -151,8 +151,8 @@
 			<artifactId>jakarta.faces-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>jakarta.portlet</groupId>
-			<artifactId>portlet-api</artifactId>
+			<groupId>com.liferay.jakarta.portlet</groupId>
+			<artifactId>com.liferay.jakarta.portlet-api</artifactId>
 		</dependency>
 		<!-- Note that jakarta.servlet-api is only necessary to make Eclipse happy -->
 		<dependency>
@@ -163,6 +163,8 @@
 		<dependency>
 			<groupId>jakarta.servlet.jsp</groupId>
 			<artifactId>jakarta.servlet.jsp-api</artifactId>
+			<version>3.1.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.liferay</groupId>
