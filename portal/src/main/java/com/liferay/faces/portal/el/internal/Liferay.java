@@ -15,8 +15,8 @@ package com.liferay.faces.portal.el.internal;
 
 import java.io.Serializable;
 
-import jakarta.faces.bean.ManagedBean;
-import jakarta.faces.bean.ViewScoped;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
 import jakarta.faces.context.ExternalContext;
 import jakarta.faces.context.FacesContext;
 import jakarta.portlet.PortletRequest;
@@ -38,7 +38,7 @@ import com.liferay.portal.kernel.util.WebKeys;
 /**
  * @author  Neil Griffin
  */
-@ManagedBean(name = "liferay")
+@Named("liferay")
 @ViewScoped
 public class Liferay implements Serializable {
 
