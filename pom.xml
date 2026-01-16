@@ -253,14 +253,6 @@
 										com.liferay.faces.util.osgi.internal.FacesThinWabInitializer
 										com.liferay.faces.bridge.servlet.BridgeServletContainerInitializer
 									</echo>
-									<echo file="${project.build.outputDirectory}/META-INF/services/com.sun.faces.spi.annotationprovider">com.liferay.faces.util.osgi.mojarra.spi.internal.AnnotationProviderOSGiImpl
-									</echo>
-									<echo file="${project.build.outputDirectory}/META-INF/services/com.sun.faces.spi.FaceletConfigResourceProvider">com.liferay.faces.util.osgi.mojarra.spi.internal.FaceletConfigResourceProviderOSGiImpl
-									</echo>
-									<echo file="${project.build.outputDirectory}/META-INF/services/com.sun.faces.spi.FacesConfigResourceProvider">com.liferay.faces.util.osgi.mojarra.spi.internal.FacesConfigResourceProviderOSGiImpl
-									</echo>
-									<echo file="${project.build.outputDirectory}/META-INF/services/com.sun.faces.util.cdi11.CDIUtil">com.sun.faces.util.cdi11.CDIUtilImpl
-									</echo>
 									<mkdir dir="${project.build.outputDirectory}/WEB-INF" />
 								</target>
 							</configuration>
@@ -798,46 +790,46 @@
 			<dependency>
 				<groupId>com.liferay</groupId>
 				<artifactId>com.liferay.captcha.api</artifactId>
-				<version>1.1.0</version>
+				<version>10.0.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay</groupId>
 				<artifactId>com.liferay.captcha.taglib</artifactId>
-				<version>1.0.0</version>
+				<version>7.0.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay.portal</groupId>
 				<artifactId>com.liferay.portal.kernel</artifactId>
 				<!-- CE.GA125/DXP.2024.Q3: https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/portal-kernel/bnd.bnd#L3 -->
-				<version>146.0.1</version>
+				<version>178.0.0-SNAPSHOT</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay.portal</groupId>
 				<artifactId>com.liferay.util.taglib</artifactId>
 				<!-- CE.GA125/DXP.2024.Q3: https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/util-taglib/bnd.bnd#L3 -->
-				<version>24.0.5</version>
+				<version>28.3.0-SNAPSHOT</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay.portal</groupId>
 				<artifactId>com.liferay.util.java</artifactId>
 				<!-- CE.GA125/DXP.2024.Q3: https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/util-java/bnd.bnd#L3 -->
-				<version>19.0.4</version>
+				<version>22.0.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay</groupId>
 				<artifactId>com.liferay.dynamic.data.mapping.api</artifactId>
 				<!-- CE.GA125/DXP.2024.Q3: https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/bnd.bnd#L3 -->
-				<version>30.0.2</version>
+				<version>35.6.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.liferay</groupId>
 				<artifactId>com.liferay.journal.api</artifactId>
 				<!-- CE.GA125/DXP.2024.Q3: https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/modules/apps/journal/journal-api/bnd.bnd#L3 -->
-				<version>35.1.0</version>
+				<version>41.0.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
